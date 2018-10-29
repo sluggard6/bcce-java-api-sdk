@@ -6,7 +6,7 @@ A Java sdk for bcce exchange API
 ```xml
 
  <dependency>
-    <groupId>com.bcce.dax</groupId>
+    <groupId>com.bcce</groupId>
     <artifactId>bcce-java-api-sdk</artifactId>
     <version>1.0.0-SNAPSHOT</version>
  </dependency>
