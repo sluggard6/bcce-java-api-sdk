@@ -27,7 +27,7 @@ public class BaseTest {
     /**
      * ccex open api 根路径
      */
-    private final String baseUrl = "http://www.bcce.com/api/v1/";
+    private final String baseUrl = "https://www.bcce.com/api/v1/";
 
     protected ClientParameter parameter = ClientParameter.builder()
             .apiKey(this.apiKey)
