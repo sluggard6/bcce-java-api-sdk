@@ -13,6 +13,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
+import java.net.InetSocketAddress;
+import java.net.Proxy;
 import java.time.Instant;
 import java.util.concurrent.TimeUnit;
 
@@ -48,6 +50,7 @@ public class ApiClient {
                 .addInterceptor(new HttpStatusInterceptor())
                 .connectTimeout(this.parameter.getTimeout(), TimeUnit.SECONDS)
                 .readTimeout(this.parameter.getTimeout(), TimeUnit.SECONDS)
+                .proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 1087)))
                 .build();
     }
 
