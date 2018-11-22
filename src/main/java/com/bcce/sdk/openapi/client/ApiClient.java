@@ -50,7 +50,7 @@ public class ApiClient {
                 .addInterceptor(new HttpStatusInterceptor())
                 .connectTimeout(this.parameter.getTimeout(), TimeUnit.SECONDS)
                 .readTimeout(this.parameter.getTimeout(), TimeUnit.SECONDS)
-                .proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 1087)))
+//                .proxy(new Proxy(Proxy.Type.HTTP, new InetSocketAddress("127.0.0.1", 1087)))
                 .build();
     }
 
